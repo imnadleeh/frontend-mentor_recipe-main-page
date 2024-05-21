@@ -6,7 +6,13 @@ html {
 body {
   background-color: hsl(30, 54%, 90%);
   font-size: 16px;
+}
+
+.outfit {
   font-family: "Outfit", sans-serif;
+}
+
+.young {
   font-family: "Young Serif", serif;
 }
 
@@ -20,11 +26,26 @@ article {
 }
 
 .container {
-  background-color: aqua;
-  width: 100px;
-  height: 100px
+  border: 1px solid black;
+  width: 655px;
+  height: 100%;
+  margin: 0 auto;
 }
 
+img {
+  width: 100%;
+  margin: 40px 0 0;
+  border-radius: 15px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.overview {
+  font-family: "Outfit", sans-serif;
+}
 
 
 
