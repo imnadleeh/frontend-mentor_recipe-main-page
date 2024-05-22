@@ -12,7 +12,7 @@ body {
 article {
   max-width: 1440px;
   background-color: hsl(0, 0%, 100%);
-  height: 100vh;
+  height: 1710px;
   width: 735px;
   margin: 125px auto;
   border-radius: 30px
@@ -27,7 +27,7 @@ article {
 
 img {
   width: 100%;
-  margin: 40px 0 0;
+  margin: 40px 0 45px;
   border-radius: 15px;
 }
 
@@ -38,16 +38,17 @@ h1, h2 {
 h1 {
   font-size: 40px;
   font-weight: 400;
-  margin-bottom: 0px;
+  margin-bottom: 40px;
 }
 
-p, h3, li {
+p, h3, li, th, td{
   font-family: "Outfit", sans-serif;
 }
 
 .description {
   font-size: 1em;
   font-weight: 300;
+  margin-bottom: 40px;
 }
 
 .box {
@@ -55,13 +56,13 @@ p, h3, li {
   width: 100%;
   height: 180px;
   border-radius: 10px;
-  margin-top: 40px;
 }
 
 h3 {
   padding: 25px 0 0 25px;
   color: hsl(332, 51%, 32%);
   font-weight: 600;
+  margin-bottom: 10px;
 }
 
 span {
@@ -78,20 +79,22 @@ li {
   padding-left: 20px;
   font-size: 1em;
   font-weight: 300;
+  line-height: 2;
 }
 
 .prep-time{
   padding-left: 42px;
 }
 
-.ingredients {
+.ingredients, .instructions {
   padding-left: 18px;
 }
 
 
-h2 {
+h2, td {
   color: hsl(14, 45%, 36%);
   font-weight: 500;
+  margin: 35px 0 20px;
 }
 
 .attribution {
@@ -100,4 +103,34 @@ h2 {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+hr {
+  border: 0.8px solid hsl(0, 0%, 90%);
+  margin: 35px 0;
+}
+
+ol > li::marker {
+  font-size: 1em;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+tr {
+  border-bottom: 1px solid hsl(0, 0%, 90%);
+}
+
+td {
+  padding: 10px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  padding-left: 30px;
+  font-weight: normal;
 }
