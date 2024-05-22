@@ -15,7 +15,7 @@ article {
   height: 1735px;
   width: 735px;
   margin: 125px auto;
-  border-radius: 30px
+  border-radius: 30px;
 }
 
 .container {
@@ -139,4 +139,67 @@ th {
   text-align: left;
   padding-left: 30px;
   font-weight: normal;
+}
+
+@media only screen and (max-width: 768px){
+
+  article {
+    border-radius: 0;
+    width: 90%;
+    margin: 50px auto;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  img {
+    border-radius: 0;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .description {
+    font-size: 0.9em;
+  }
+
+  .box {
+    height: 150px;
+  }
+
+  h3 {
+    padding: 20px 0 0 20px;
+  }
+
+  li::marker {
+    padding-left: 20px;
+  }
+
+  li {
+    padding-left: 15px;
+    font-size: 0.9em;
+  }
+
+  .prep-time{
+    padding-left: 32px;
+  }
+
+  .ingredients, .instructions {
+    padding-left: 15px;
+  }
+
+  h2, td {
+    margin: 20px 0 15px;
+  }
+
+  hr {
+    margin: 20px 0;
+  }
+
+  table {
+    margin-top: 15px;
+  }
 }
