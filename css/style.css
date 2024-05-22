@@ -25,9 +25,11 @@ article {
 }
 
 img {
-  width: 100%;
-  margin: 40px 0 30px;
+  width: 90%;
+  display: block;
+  margin: 0 auto 30px;
   border-radius: 15px;
+  padding-top: 40px;
 }
 
 h1, h2 {
@@ -113,7 +115,7 @@ hr {
 ol > li::marker {
   font-size: 1em;
   font-weight: bold;
-  font-family: sans-serif;
+  font-family: Outfit, sans-serif;
 }
 
 tr {
@@ -143,63 +145,105 @@ th {
 
 @media only screen and (max-width: 768px){
 
+  body {
+    background: none;
+  }
+
   article {
     border-radius: 0;
-    width: 90%;
-    margin: 50px auto;
-  }
-
-  .container {
     width: 100%;
-  }
-
-  img {
-    border-radius: 0;
     margin: 0;
   }
 
+  .container {
+    width: 80%;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 0;
+    margin: 0 0 50px;
+    padding: 0;
+  }
+
   h1 {
-    font-size: 30px;
+    font-size: 48px;
+    line-height: 1;
+    margin-bottom: 35px;
+
   }
 
   .description {
-    font-size: 0.9em;
+    font-size: 1.3em;
+    line-height: 1.5;
+    margin-bottom: 48px;
   }
 
   .box {
-    height: 150px;
+    width: 102%;
+    height: 260px;
+    border-radius: 20px;
   }
 
   h3 {
-    padding: 20px 0 0 20px;
+    font-size: 1.7em;
+    padding-left: 30px;
   }
 
   li::marker {
-    padding-left: 20px;
+    font-size: 0.8em;
+    padding-left: 22px;
   }
 
   li {
-    padding-left: 15px;
-    font-size: 0.9em;
+    padding-left: 29px;
+    font-size: 1.4em;
+    line-height: 1.8;
   }
 
   .prep-time{
-    padding-left: 32px;
+    padding-left: 57px;
   }
 
   .ingredients, .instructions {
-    padding-left: 15px;
+    padding-left: 25px;
   }
 
-  h2, td {
-    margin: 20px 0 15px;
+  ol > li::marker {
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+
+
+  ol > li {
+    font-size: 1.3em;
+    line-height: 1.7;
+  }
+
+  h2 {
+    font-size: 38px;
+    margin: 30px 0 15px;
   }
 
   hr {
-    margin: 20px 0;
+    margin: 35px 0;
+  }
+
+  .text {
+    font-size: 1.35em;
+    line-height: 1.5;
   }
 
   table {
-    margin-top: 15px;
+    margin-top: 20px;
+    font-size: 1.35em;
+  }
+
+  th {
+    padding: 30px 0 15px 40px;
+  }
+
+  td {
+    padding: 30px 25px 15px 5px;
   }
 }
